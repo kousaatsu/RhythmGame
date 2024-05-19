@@ -10,6 +10,7 @@ namespace InputSystem
         [SerializeField] Character _character;
         [SerializeField] Camera _camera;
         [SerializeField] Rigidbody2D _characterrb;
+        [SerializeField] string _sceneName;
         CharacterInvoker _invoker;
         private float Horizontal;
         bool _isFacingRight = true;
@@ -37,7 +38,7 @@ namespace InputSystem
             _invoker.Move(moveDir);
         }
 
-        void FlipSprite()
+        private void FlipSprite()
         {
             if (_isFacingRight && Horizontal < 0f || !_isFacingRight && Horizontal > 0f)
             {
