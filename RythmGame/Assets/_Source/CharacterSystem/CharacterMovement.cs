@@ -12,7 +12,7 @@ namespace CharacterSystem
         }
         public void Move(Rigidbody2D rb, float speed, Vector2 direction)
         {
-            Moving (rb, speed, direction);
+            Moving(rb, speed, direction);
         }
     }
 }
