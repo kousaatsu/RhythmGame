@@ -3,6 +3,7 @@ using NPCSystem;
 using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 namespace UI
 {
@@ -17,10 +18,10 @@ namespace UI
         [SerializeField] List<Dialog> _dialogList = new List<Dialog>();
         int _dialogNum = 0;
         [SerializeField] GameObject _dialogBox;
+        [SerializeField] GameObject _button;
         DialogBoxManager _manager;
         bool _isShowing = false;
 
-        // Start is called before the first frame update
         void Awake()
         {
             _manager = _dialogBox.GetComponent<DialogBoxManager>();
@@ -28,11 +29,13 @@ namespace UI
 
         private void OnCollisionEnter2D (Collision2D collision)
         {
+            _button.SetActive(true);
             _isShowing = true;
         }
 
         private void OnCollisionExit2D(Collision2D collision)
         {
+            _button.SetActive(false);
             _isShowing = false;
         }
 
@@ -43,6 +46,7 @@ namespace UI
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    _button.SetActive(false);
                     Dialogs();
                     _dialogBox.SetActive(true);
                 }
