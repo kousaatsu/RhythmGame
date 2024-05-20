@@ -6,6 +6,7 @@ namespace NoteSystem
     public class Note : MonoBehaviour
     {
         [field: SerializeField] float _speed;
+        [field: SerializeField] float _timer;
 
         NoteMovement _move;
         private void Start()
