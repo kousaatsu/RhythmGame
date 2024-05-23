@@ -1,6 +1,5 @@
 using UnityEngine;
 using SceneManagement;
-using Unity.VisualScripting;
 
 public class ChangeSceneOnButton : MonoBehaviour
 {
@@ -13,7 +12,7 @@ public class ChangeSceneOnButton : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKey)
         {
             _changer.ChangeScene(sceneName);
         }
