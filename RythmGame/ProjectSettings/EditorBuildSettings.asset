@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Presentation/Scenes/Prefs.unity
     guid: ad21c01f96ae0c44bb2aa36cde22fa75
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/PlayScreen.unity
+    guid: 53bcf4134342c8c4a8bd10e01775cc59
   m_configObjects: {}
