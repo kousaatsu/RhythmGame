@@ -14,7 +14,7 @@ public class NoteTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -28,6 +28,7 @@ public class NoteTimer : MonoBehaviour
             }
             else
             {
+                Instantiate(note.note);
                 note.note.SetActive(true);
                 _noteList.Remove(note);
             }

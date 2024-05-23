@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ScoreSystem;
+using TMPro;
 
 public class NoteTap : MonoBehaviour
 {
     [field: SerializeField] KeyCode _key;
     [field: SerializeField] int _scoreVal;
+    [field: SerializeField] TextMeshProUGUI _scoreText;
     [Header("Clips")]
     [field: SerializeField] GameObject _audioSource;
     [field: SerializeField] AudioClip _noTap;
     [field: SerializeField] AudioClip _tap;
     [field: SerializeField] AudioClip _lose;
     bool _beingTriggered;
+    bool _isTapped = false;
     Score _score;
     ScoreView _scoreView;
     private void Awake()
@@ -32,6 +35,8 @@ public class NoteTap : MonoBehaviour
         _beingTriggered = true;
         if (collision.gameObject.layer == 6 && Input.GetKey(_key))
         {
+            _scoreText.text = "Good!";
+            _isTapped = true;
             _audioSource.GetComponent<AudioSource>().PlayOneShot(_tap);
             Destroy(collision.gameObject);
         }
@@ -41,6 +46,10 @@ public class NoteTap : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
+            if (_isTapped == false)
+            {
+                _scoreText.text = "Miss!";
+            }
             _beingTriggered = false;
             _audioSource.GetComponent<AudioSource>().PlayOneShot(_lose);
             Destroy(collision.gameObject);
