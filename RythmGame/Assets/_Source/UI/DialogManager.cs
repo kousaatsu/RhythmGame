@@ -46,6 +46,7 @@ namespace UI
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    Time.timeScale = 0f;
                     _button.SetActive(false);
                     Dialogs();
                     _dialogBox.SetActive(true);
