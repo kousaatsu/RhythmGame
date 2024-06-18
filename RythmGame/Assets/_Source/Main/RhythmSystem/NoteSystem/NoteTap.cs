@@ -48,10 +48,11 @@ public class NoteTap : MonoBehaviour
         {
             if (_isTapped == false)
             {
+                _audioSource.GetComponent<AudioSource>().PlayOneShot(_lose);
                 _scoreText.text = "Miss!";
             }
             _beingTriggered = false;
-            _audioSource.GetComponent<AudioSource>().PlayOneShot(_lose);
+            
             Destroy(collision.gameObject);
         }
     }
