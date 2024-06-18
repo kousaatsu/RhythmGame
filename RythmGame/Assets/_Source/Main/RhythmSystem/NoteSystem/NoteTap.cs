@@ -52,7 +52,7 @@ public class NoteTap : MonoBehaviour
                 _scoreText.text = "Miss!";
             }
             _beingTriggered = false;
-            
+
             Destroy(collision.gameObject);
         }
     }

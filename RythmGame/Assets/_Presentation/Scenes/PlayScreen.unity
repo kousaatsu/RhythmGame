@@ -1437,7 +1437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &505461842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   _scoreText: {fileID: 1369722325}
   _audioSource: {fileID: 2091668321}
   _noTap: {fileID: 8300000, guid: efff6fba37a574d4fa42a40c01032d88, type: 3}
-  _tap: {fileID: 8300000, guid: 3411c15b37b0a3f498d2c078c336103b, type: 3}
+  _tap: {fileID: 8300000, guid: 3fad980abbfb81f459e27be6de797a52, type: 3}
   _lose: {fileID: 8300000, guid: e89c21444f5eb6b4392420dea4494909, type: 3}
 --- !u!50 &714717777
 Rigidbody2D:
@@ -2412,8 +2412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000030518, y: -122.140015}
-  m_SizeDelta: {x: 1920.5, y: 244.26}
+  m_AnchoredPosition: {x: -0.000045776, y: -46.39}
+  m_SizeDelta: {x: 960.5, y: 92.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041260643
 MonoBehaviour:
@@ -2990,7 +2990,7 @@ MonoBehaviour:
   _scoreText: {fileID: 1369722325}
   _audioSource: {fileID: 2091668321}
   _noTap: {fileID: 8300000, guid: efff6fba37a574d4fa42a40c01032d88, type: 3}
-  _tap: {fileID: 8300000, guid: 3411c15b37b0a3f498d2c078c336103b, type: 3}
+  _tap: {fileID: 8300000, guid: 3fad980abbfb81f459e27be6de797a52, type: 3}
   _lose: {fileID: 8300000, guid: e89c21444f5eb6b4392420dea4494909, type: 3}
 --- !u!50 &1121099867
 Rigidbody2D:
@@ -3426,7 +3426,7 @@ MonoBehaviour:
   _scoreText: {fileID: 1369722325}
   _audioSource: {fileID: 2091668321}
   _noTap: {fileID: 8300000, guid: efff6fba37a574d4fa42a40c01032d88, type: 3}
-  _tap: {fileID: 8300000, guid: 3411c15b37b0a3f498d2c078c336103b, type: 3}
+  _tap: {fileID: 8300000, guid: 3fad980abbfb81f459e27be6de797a52, type: 3}
   _lose: {fileID: 8300000, guid: e89c21444f5eb6b4392420dea4494909, type: 3}
 --- !u!50 &1372705063
 Rigidbody2D:
@@ -3912,8 +3912,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -122.13}
-  m_SizeDelta: {x: 1920.5, y: 836.13}
+  m_AnchoredPosition: {x: -0.000038146973, y: -46.38498}
+  m_SizeDelta: {x: 960.5, y: 507.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1655689612
 MonoBehaviour:
@@ -4674,7 +4674,7 @@ MonoBehaviour:
   _scoreText: {fileID: 1369722325}
   _audioSource: {fileID: 2091668321}
   _noTap: {fileID: 8300000, guid: efff6fba37a574d4fa42a40c01032d88, type: 3}
-  _tap: {fileID: 8300000, guid: 3411c15b37b0a3f498d2c078c336103b, type: 3}
+  _tap: {fileID: 8300000, guid: 3fad980abbfb81f459e27be6de797a52, type: 3}
   _lose: {fileID: 8300000, guid: e89c21444f5eb6b4392420dea4494909, type: 3}
 --- !u!50 &2036077546
 Rigidbody2D:
@@ -4830,6 +4830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SFXSource: {fileID: 2091668322}
+  notes: {fileID: 505461841}
 --- !u!4 &2091668324
 Transform:
   m_ObjectHideFlags: 0

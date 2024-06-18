@@ -17,7 +17,7 @@ namespace NoteSystem
         {
             _move.Move(gameObject, _speed);
         }
-        
+
     }
 
 }
