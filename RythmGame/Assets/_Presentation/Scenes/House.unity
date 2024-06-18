@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 305333812}
   - component: {fileID: 305333811}
   - component: {fileID: 305333810}
+  - component: {fileID: 305333813}
   m_Layer: 0
   m_Name: flower
   m_TagString: Untagged
@@ -718,6 +719,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &305333813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305333809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: A beautiful flower.
+  - charID: 0
+    text: It looks kinda familiar. I wonder where I have seen it before...
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &317799897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,6 +1642,7 @@ GameObject:
   - component: {fileID: 507148767}
   - component: {fileID: 507148766}
   - component: {fileID: 507148765}
+  - component: {fileID: 507148768}
   m_Layer: 0
   m_Name: shelf
   m_TagString: Untagged
@@ -1741,6 +1762,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507148768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507148764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: I wonder how many books there are on this shelf. Sumire's a real bookworm!
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &538227204
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,6 +2693,7 @@ GameObject:
   - component: {fileID: 753166774}
   - component: {fileID: 753166773}
   - component: {fileID: 753166772}
+  - component: {fileID: 753166775}
   m_Layer: 0
   m_Name: drawer
   m_TagString: Untagged
@@ -2694,7 +2733,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027772859, y: 0.080378436}
+  m_Offset: {x: 0.004088016, y: 0.080378436}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2705,7 +2744,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1744543, y: 0.15924312}
+  m_Size: {x: 0.110732526, y: 0.15924312}
   m_EdgeRadius: 0
 --- !u!212 &753166773
 SpriteRenderer:
@@ -2774,6 +2813,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753166775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753166771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: A mysterious drawer.
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &766805376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,6 +2841,7 @@ GameObject:
   - component: {fileID: 766805379}
   - component: {fileID: 766805378}
   - component: {fileID: 766805377}
+  - component: {fileID: 766805380}
   m_Layer: 0
   m_Name: sofa
   m_TagString: Untagged
@@ -2904,6 +2961,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766805380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766805376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: Sumire's favorite sofa.
+  - charID: 0
+    text: I wanna take a nap on it!
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &791244686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,6 +3125,7 @@ GameObject:
   - component: {fileID: 947089804}
   - component: {fileID: 947089803}
   - component: {fileID: 947089802}
+  - component: {fileID: 947089805}
   m_Layer: 0
   m_Name: table
   m_TagString: Untagged
@@ -3168,6 +3245,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &947089805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947089801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: A table with lotsa stuff on it!
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &996249424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,7 +3483,7 @@ GameObject:
   - component: {fileID: 1094595084}
   - component: {fileID: 1094595083}
   - component: {fileID: 1094595082}
-  - component: {fileID: 1094595081}
+  - component: {fileID: 1094595086}
   m_Layer: 0
   m_Name: Kitten1
   m_TagString: Untagged
@@ -3397,25 +3491,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1094595081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094595080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogList:
-  - charID: 0
-    text: I'm talking!
-  - charID: 1
-    text: Yes, me too.
-  _dialogBox: {fileID: 2019750940}
-  _button: {fileID: 1856902836}
 --- !u!95 &1094595082
 Animator:
   serializedVersion: 5
@@ -3549,6 +3624,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094595086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094595080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: Hi!
+  - charID: 1
+    text: Wah.
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &1104505603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,6 +3788,7 @@ GameObject:
   - component: {fileID: 1144490795}
   - component: {fileID: 1144490794}
   - component: {fileID: 1144490793}
+  - component: {fileID: 1144490796}
   m_Layer: 0
   m_Name: chair_side
   m_TagString: Untagged
@@ -3813,6 +3908,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1144490796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144490792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5318b3be0478141943122480027228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogList:
+  - charID: 0
+    text: A chair!
+  - charID: 0
+    text: Looks pretty comfy.
+  _dialogBox: {fileID: 2019750940}
+  _button: {fileID: 1856902836}
 --- !u!1 &1175786716
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,9 +5029,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f5401ad33e5aff94ca102cc78a91d4a5, type: 3}
   - {fileID: 21300000, guid: 69fd7217e788b214eb8fada3e06dab54, type: 3}
   _names:
-  - First Name
-  - Second Name
-  - Third Name
+  - Sora
+  - Shiro
+  - Sumire
   _imageObj: {fileID: 1084743238}
   _name: {fileID: 347316732}
   _text: {fileID: 1175786718}

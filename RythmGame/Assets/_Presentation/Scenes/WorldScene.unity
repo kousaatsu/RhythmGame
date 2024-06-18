@@ -4470,9 +4470,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f5401ad33e5aff94ca102cc78a91d4a5, type: 3}
   - {fileID: 21300000, guid: 69fd7217e788b214eb8fada3e06dab54, type: 3}
   _names:
-  - First Name
-  - Second Name
-  - Third Name
+  - Sora
+  - Shiro
+  - Sumire
   _imageObj: {fileID: 1738212795}
   _name: {fileID: 21232356}
   _text: {fileID: 978179730}
