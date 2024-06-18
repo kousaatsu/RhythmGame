@@ -1,9 +1,7 @@
 using UnityEngine;
-using NPCSystem;
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace UI
 {
@@ -19,6 +17,8 @@ namespace UI
         int _dialogNum = 0;
         [SerializeField] GameObject _dialogBox;
         [SerializeField] GameObject _button;
+
+        [SerializeField] bool _toGame = false;
         DialogBoxManager _manager;
         bool _isShowing = false;
 
@@ -70,6 +70,10 @@ namespace UI
             {
                 _isShowing = false ;
                 _dialogNum = 0;
+                if (_toGame == true)
+                {
+                    SceneManager.LoadScene("PlayScreen");
+                }
                 _manager.Close();
             }
         }

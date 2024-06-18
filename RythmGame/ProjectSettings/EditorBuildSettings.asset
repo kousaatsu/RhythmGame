@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Presentation/Scenes/PlayScreen.unity
     guid: 53bcf4134342c8c4a8bd10e01775cc59
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/House.unity
+    guid: c75b6e95e3704884f8b1bd8ac8328a66
   m_configObjects: {}
