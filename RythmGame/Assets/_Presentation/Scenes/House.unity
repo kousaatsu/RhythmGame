@@ -3686,6 +3686,8 @@ MonoBehaviour:
     text: You need to use your rhythm skills there and press the WASD buttons according
       to the rhythm.
   - charID: 1
+    text: Oh and be sure to not MISS 5 times.
+  - charID: 1
     text: Good luck.
   - charID: 0
     text: WAAAIT!!! What an arrogant girl!

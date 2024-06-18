@@ -6,6 +6,7 @@ using TMPro;
 
 public class NoteTap : MonoBehaviour
 {
+    [field: SerializeField] GameObject _losingPanel;
     [field: SerializeField] KeyCode _key;
     [field: SerializeField] int _scoreVal;
     [field: SerializeField] TextMeshProUGUI _scoreText;
@@ -18,8 +19,10 @@ public class NoteTap : MonoBehaviour
     bool _isTapped = false;
     Score _score;
     ScoreView _scoreView;
+    static int _countMisses;
     private void Awake()
     {
+        _countMisses = 0;
         _score = new Score();
     }
 
@@ -44,13 +47,22 @@ public class NoteTap : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+
         if (collision.gameObject.layer == 6)
         {
             if (_isTapped == false)
             {
+                _countMisses++;
+                Debug.Log(_countMisses);
                 _audioSource.GetComponent<AudioSource>().PlayOneShot(_lose);
                 _scoreText.text = "Miss!";
+                if (_countMisses == 5)
+                {
+                    Time.timeScale = 0f;
+                    _losingPanel.SetActive(true);
+                }
             }
+            _isTapped = false;
             _beingTriggered = false;
 
             Destroy(collision.gameObject);
